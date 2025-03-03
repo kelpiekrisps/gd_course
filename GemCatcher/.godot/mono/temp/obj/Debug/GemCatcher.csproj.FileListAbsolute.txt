@@ -32,3 +32,4 @@
 /Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.pdb
 /Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.genruntimeconfig.cache
 /Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/ref/GemCatcher.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.sourcelink.json
