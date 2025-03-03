@@ -1,0 +1,6 @@
+res://Scenes/Game/Game.tscn
+res://Scenes/Paddle/Paddle.tscn
+res://Scenes/Gem/Gem.tscn
+res://Scenes/Game/Game.cs
+res://Scenes/Gem/Gem.cs
+res://Scenes/Paddle/Paddle.cs

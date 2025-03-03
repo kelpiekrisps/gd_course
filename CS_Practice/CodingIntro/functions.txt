@@ -1,0 +1,18 @@
+using System;
+
+// returnType functionName(parameters){ function logic }
+void SayPhrase(string name, string phrase) {
+    Console.WriteLine($"{name} says, \"{phrase}\"");
+}
+
+int GetHealth(string name) {
+    // for consistent values, seed the random
+    Random random = new Random();  // if you are getting the same val random seed is stuck, declare random outside then call it (random.Next(range))
+    int health = random.Next(49, 101);
+    return health;
+}
+
+SayPhrase("Kendrick", "Say Drake-");
+
+int gandalfHealth = GetHealth("Gandalf");
+Console.WriteLine($"{gandalfHealth}");

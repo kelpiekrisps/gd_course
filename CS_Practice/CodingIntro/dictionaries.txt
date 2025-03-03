@@ -1,0 +1,79 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+// Dictionary<keyType, valueType>
+//Dictionary<string, string> fellowshipRoles = new Dictionary<string, string>();
+Dictionary<string, string> fellowshipRoles = new();
+
+fellowshipRoles.Add("Frodo", "Ringbearer");
+fellowshipRoles.Add("Gandalf", "Wizard");
+fellowshipRoles.Add("Aragorn", "Ranger");
+// keys must be unique. cannot do the below line
+//fellowshipRoles.Add("Frodo", "short");
+
+string frodoRole = fellowshipRoles["Frodo"];  // use key to 'index' dictionary
+Console.WriteLine($"Frodo's role: {frodoRole}");
+
+// output keys
+foreach (string member in fellowshipRoles.Keys) {
+    Console.WriteLine($"Member: {member}");
+}
+
+// output values
+foreach (string role in fellowshipRoles.Values) {
+    Console.WriteLine($"Role: {role}");
+}
+
+
+// output keyvalue pairs
+foreach (KeyValuePair<string, string> member in fellowshipRoles) {
+    Console.WriteLine($"Name: {member.Key}, Role: {member.Value}");
+}
+
+/* UTILITIES */
+// check for specific key:
+if (fellowshipRoles.ContainsKey("Frodo")){
+    Console.WriteLine("Frodo is part of the Fellowship");
+}
+
+// remove member
+fellowshipRoles.Remove("Aragorn");
+
+// change value of key
+fellowshipRoles["Gandalf"] = "High Wizard";  // blaze it
+
+/* CODING CHALLENGE */
+using System;
+using System.Collections.Generic;
+
+// Dictionary<string, string[]> characterAbilities = new();
+// characterAbilities.Add("Frodo", ["Stealth", "Courage", "Speed"]);
+// characterAbilities.Add("Gandalf", ["Magic", "Wisdom", "Smoke"]);
+// characterAbilities.Add("Rainbow Dash", ["Flight", "Speed"]);
+
+Dictionary<string, List<string>> characterAbilities = new();
+characterAbilities.Add("Frodo", new List<string> {"Stealth", "Courage", "Speed"});
+characterAbilities.Add("Gandalf", new List<string> {"Magic", "Wisdom", "Smoke"});
+characterAbilities.Add("Rainbow Dash", new List<string> {"Flight", "Speed"});
+
+// print each character and their abilities
+foreach (KeyValuePair<string, List<string>> character in characterAbilities) {
+    Console.WriteLine($"Name: {character.Key} \nAbilities:");
+    foreach(string ability in character.Value) {
+        Console.WriteLine($"  {ability}");
+    }
+}
+
+// if character has 'Speed' atribute, output name
+Console.WriteLine($"\nSpeedsters:");
+foreach (var character in characterAbilities) {
+    // foreach(string ability in character.Value) {
+    //    if (ability.Contains("Speed")) {
+    //     Console.WriteLine($" {character.Key}");
+    //    }
+    // }
+    if (character.Value.Contains("Speed")) {
+        Console.WriteLine($"{character.Key}");
+    }
+}

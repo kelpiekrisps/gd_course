@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://q3id03evomwk"]
+
+[ext_resource type="Script" path="res://Scenes/Game/Game.cs" id="1_gmcy6"]
+[ext_resource type="Texture2D" uid="uid://cp58uuiyyw466" path="res://assets/GameBg.png" id="2_lk3nx"]
+[ext_resource type="PackedScene" uid="uid://uokjqareqdcv" path="res://Scenes/Paddle/Paddle.tscn" id="3_yc3yl"]
+[ext_resource type="PackedScene" uid="uid://cjgpn4p267se1" path="res://Scenes/Gem/Gem.tscn" id="4_hbhst"]
+[ext_resource type="AudioStream" uid="uid://dp4j4bdkr826w" path="res://assets/bgm_action_5.mp3" id="5_fhpjd"]
+[ext_resource type="AudioStream" uid="uid://pwj1n5din7i4" path="res://assets/spell1_0.wav" id="6_wf8oc"]
+
+[node name="Game" type="Node2D" node_paths=PackedStringArray("_spawnTimer", "_scoreLabel", "_bgMusic", "_effects")]
+script = ExtResource("1_gmcy6")
+_gemScene = ExtResource("4_hbhst")
+_spawnTimer = NodePath("GemSpawnTimer")
+_scoreLabel = NodePath("ScoreLabel")
+_bgMusic = NodePath("bgMusic")
+_effects = NodePath("Effects")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 321)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_lk3nx")
+
+[node name="Paddle" parent="." instance=ExtResource("3_yc3yl")]
+position = Vector2(576, 559)
+
+[node name="GemSpawnTimer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 64.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0.847624, 0.78877, 0.406768, 1)
+theme_override_font_sizes/font_size = 47
+text = "0000"
+
+[node name="bgMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_fhpjd")
+volume_db = -16.0
+autoplay = true
+
+[node name="Effects" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_wf8oc")
+volume_db = -5.0

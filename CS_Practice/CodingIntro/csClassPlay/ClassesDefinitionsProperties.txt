@@ -1,0 +1,48 @@
+using System;
+
+class Character {
+    // properties (class variables)
+    private string _name;  // without public/protected, implicitly private
+    private int _speed = 40;  // default speed of 40
+    private int _strength = 500;
+
+    // static tells at class level, not instance
+    // this is shared by all instantiations of this
+    static int NumberOfCharacters = 0; // access: ClassName.NumberOfCharacters
+
+    public int Strength { 
+        get {
+            return _strength;
+        } 
+        set {
+            if (value < 100) {  // value implicit passed in param
+                _strength = 100;
+            } else {
+                _strength = value;
+            }
+        }
+    }
+
+    // constructor:
+    public Character(string name) {
+        _name = name;
+        NumberOfCharacters++;
+        Console.WriteLine($"Name established: {_name}");
+    }
+    public Character() {  // default overloaded constructor
+        _name = "No name";
+        NumberOfCharacters++;
+        Console.WriteLine($"Character made without name.");
+    }
+
+    // methods (functions)
+    public string GetName() {
+        return _name;
+    }
+    public void SetSpeed(int speed) {
+        _speed = speed;
+    }
+    public int GetSpeed() {
+        return _speed;
+    }
+}

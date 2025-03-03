@@ -1,0 +1,34 @@
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/bin/Debug/GemCatcher.deps.json
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/bin/Debug/GemCatcher.runtimeconfig.json
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/bin/Debug/GemCatcher.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/bin/Debug/GemCatcher.pdb
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.csproj.AssemblyReference.cache
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.AssemblyInfoInputs.cache
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.AssemblyInfo.cs
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.csproj.CoreCompileInputs.cache
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.csproj.Up2Date
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/obj/Debug/refint/GemCatcher.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.pdb
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.genruntimeconfig.cache
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 C# Course/GemCatcher/.godot/mono/temp/obj/Debug/ref/GemCatcher.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/bin/Debug/GemCatcher.deps.json
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/bin/Debug/GemCatcher.runtimeconfig.json
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/bin/Debug/GemCatcher.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/bin/Debug/GemCatcher.pdb
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.csproj.AssemblyReference.cache
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.AssemblyInfoInputs.cache
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.AssemblyInfo.cs
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.csproj.CoreCompileInputs.cache
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.csproj.Up2Date
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/refint/GemCatcher.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.pdb
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/GemCatcher.genruntimeconfig.cache
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/GemCatcher/.godot/mono/temp/obj/Debug/ref/GemCatcher.dll

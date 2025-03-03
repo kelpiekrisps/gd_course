@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+// reference types: reference to area within the memory
+// value types get initialized to a value by default. Reference types do not.
+// value types are char, int, double, float, struct, etc.
+// List<string> inventory = new List<string>();
+// inventory.Add("Pipe");
+// inventory.Add("Sword");
+// inventory.Add("Wizard Staff");
+
+List<string> inventory = new List<string> {
+    "Pipe", "Jimmy",  "Sword", "Wizard Staff"
+};
+
+foreach (string item in inventory) {
+    Console.WriteLine(item);
+}
+
+List<string> sortedInventory = inventory.Order().ToList();
+
+foreach (string item in sortedInventory) {
+    Console.WriteLine(item);
+}
+
+// what is the item in the list, is it equal to cloak? if so true, return that item
+// if does not exist, will return an empty string
+string ourItem = inventory.FirstOrDefault(item => item == "Cloak");

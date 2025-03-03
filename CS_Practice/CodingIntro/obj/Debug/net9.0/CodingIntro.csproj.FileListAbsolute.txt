@@ -1,0 +1,14 @@
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/bin/Debug/net9.0/CodingIntro
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/bin/Debug/net9.0/CodingIntro.deps.json
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/bin/Debug/net9.0/CodingIntro.runtimeconfig.json
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/bin/Debug/net9.0/CodingIntro.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/bin/Debug/net9.0/CodingIntro.pdb
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/obj/Debug/net9.0/CodingIntro.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/obj/Debug/net9.0/CodingIntro.AssemblyInfoInputs.cache
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/obj/Debug/net9.0/CodingIntro.AssemblyInfo.cs
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/obj/Debug/net9.0/CodingIntro.csproj.CoreCompileInputs.cache
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/obj/Debug/net9.0/CodingIntro.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/obj/Debug/net9.0/refint/CodingIntro.dll
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/obj/Debug/net9.0/CodingIntro.pdb
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/obj/Debug/net9.0/CodingIntro.genruntimeconfig.cache
+/Users/kelpiekrisps/Desktop/everything/Coding/Godot4 Course/CS_Practice/CodingIntro/obj/Debug/net9.0/ref/CodingIntro.dll

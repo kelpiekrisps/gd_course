@@ -1,0 +1,52 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+
+// get some user input from the console:
+Console.Write("Enter character name: ");
+string characterName = Console.ReadLine();
+
+Console.Write($"Is {characterName} a hero? (true/false): ");
+bool isHero = bool.Parse(Console.ReadLine());
+
+Console.Write($"Is {characterName} a villain? (true/false): ");
+bool isVillain = bool.Parse(Console.ReadLine());
+
+Console.Write($"How many rings does {characterName} have? ");
+int numberOfRings = int.Parse(Console.ReadLine());
+
+Console.Write($"Has the ring been destroyed? (true/false)");
+bool isRingDestroyed = bool.Parse(Console.ReadLine());
+
+// provide some silly output:
+if (isHero && (numberOfRings > 0)) {
+    Console.Write($"{characterName} must protect the ring!");
+} else if (isVillain && (numberOfRings > 0)) {
+    Console.Write($"{characterName} must use the ring for evil!");
+} else if (!isVillain && !isHero) {
+    Console.Write($"{characterName} has no role in this battle.");
+}
+
+switch (characterName) {
+    case ("Gandalf"):
+        Console.WriteLine("Part of the fellowship of the ring.");
+        break;
+    case ("Aragorn"):
+        Console.WriteLine("yadda yadda");
+        break;
+    case ("Legolas"):
+        Console.WriteLine("Truly do not care");
+        break;
+    case("Gimli"):
+        Console.WriteLine("Like omg!");
+        break;
+    case("Frodo"):
+        if (isRingDestroyed) {
+            Console.WriteLine("The quest is complete!");
+        } else {
+            Console.WriteLine("The ring is still in Frodo's possession.");
+        }
+        break;
+    default:
+        Console.WriteLine($"{characterName} is not part of the fellowship of the ring.");
+        break;
+}
