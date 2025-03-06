@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tappy", "Tappy.csproj", "{BE5B70B6-AF4A-42E2-BAD9-138B784C1EFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE5B70B6-AF4A-42E2-BAD9-138B784C1EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE5B70B6-AF4A-42E2-BAD9-138B784C1EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE5B70B6-AF4A-42E2-BAD9-138B784C1EFA}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{BE5B70B6-AF4A-42E2-BAD9-138B784C1EFA}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{BE5B70B6-AF4A-42E2-BAD9-138B784C1EFA}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{BE5B70B6-AF4A-42E2-BAD9-138B784C1EFA}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

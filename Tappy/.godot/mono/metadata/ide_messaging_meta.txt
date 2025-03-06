@@ -1,0 +1,2 @@
+﻿50927
+/Users/kelpiekrisps/Desktop/Godot_mono.app/Contents/MacOS/Godot
