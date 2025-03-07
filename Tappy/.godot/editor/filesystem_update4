@@ -1,3 +1,7 @@
 res://Scenes/Plane/plane.tscn
 res://Scenes/Plane/Plane.cs
 res://Scenes/Game/Game.tscn
+res://Scenes/Barrier/barrier.tscn
+res://Scenes/Pipe/pipe.tscn
+res://Scenes/Pipe/laser.tscn
+res://Scenes/Pipe/Laser.cs
