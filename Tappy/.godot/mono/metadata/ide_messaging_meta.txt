@@ -1,2 +1,2 @@
-﻿50927
-/Users/kelpiekrisps/Desktop/Godot_mono.app/Contents/MacOS/Godot
+﻿63485
+/private/var/folders/ph/zf0516z969s_gz95mh94z_b80000gn/T/AppTranslocation/49E23884-57BA-47FC-A00E-3AD6B474C981/d/Godot_mono.app/Contents/MacOS/Godot

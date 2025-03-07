@@ -1,10 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://dp1genyd1nb2f"]
+[gd_scene load_steps=5 format=3 uid="uid://dp1genyd1nb2f"]
 
+[ext_resource type="Script" path="res://Scenes/Game/Game.cs" id="1_6d6nk"]
 [ext_resource type="Texture2D" uid="uid://3h6kt6j48mfp" path="res://assets/background/rocks_2.png" id="1_i5jou"]
 [ext_resource type="PackedScene" uid="uid://c41cokeqnvppu" path="res://Scenes/Plane/plane.tscn" id="2_unoey"]
 [ext_resource type="PackedScene" uid="uid://cra5g3mod6ts5" path="res://Scenes/Barrier/barrier.tscn" id="3_ykkwk"]
 
-[node name="Game" type="Node2D"]
+[node name="Game" type="Node2D" node_paths=PackedStringArray("_spawnUpper", "_spawnLower")]
+script = ExtResource("1_6d6nk")
+_spawnUpper = NodePath("SpawnUpper")
+_spawnLower = NodePath("SpawnLower")
 
 [node name="sprite2d" type="Sprite2D" parent="."]
 position = Vector2(239, 326)
@@ -18,3 +22,9 @@ position = Vector2(1, -21)
 
 [node name="Barrier2" parent="." instance=ExtResource("3_ykkwk")]
 position = Vector2(0, 865)
+
+[node name="SpawnUpper" type="Marker2D" parent="."]
+position = Vector2(550, 340)
+
+[node name="SpawnLower" type="Marker2D" parent="."]
+position = Vector2(550, 540)

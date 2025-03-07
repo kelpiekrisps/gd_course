@@ -1,7 +1,9 @@
-res://Scenes/Plane/plane.tscn
+res://Scenes/Pipes/Pipes.cs
 res://Scenes/Plane/Plane.cs
+res://Scenes/Pipes/pipes.tscn
 res://Scenes/Game/Game.tscn
+res://Scenes/Plane/plane.tscn
 res://Scenes/Barrier/barrier.tscn
 res://Scenes/Pipe/pipe.tscn
 res://Scenes/Pipe/laser.tscn
-res://Scenes/Pipe/Laser.cs
+res://Scenes/Game/Game.cs
