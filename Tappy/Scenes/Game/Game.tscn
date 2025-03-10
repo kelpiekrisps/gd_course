@@ -6,13 +6,14 @@
 [ext_resource type="PackedScene" uid="uid://cra5g3mod6ts5" path="res://Scenes/Barrier/barrier.tscn" id="3_ykkwk"]
 [ext_resource type="PackedScene" uid="uid://cnjr8hx3v7ovp" path="res://Scenes/Pipes/pipes.tscn" id="4_jch1c"]
 
-[node name="Game" type="Node2D" node_paths=PackedStringArray("_spawnUpper", "_spawnLower", "_spawnTimer", "_pipesHolder")]
+[node name="Game" type="Node2D" node_paths=PackedStringArray("_spawnUpper", "_spawnLower", "_spawnTimer", "_pipesHolder", "_plane")]
 script = ExtResource("1_6d6nk")
 _spawnUpper = NodePath("SpawnUpper")
 _spawnLower = NodePath("SpawnLower")
 _spawnTimer = NodePath("timer")
 _pipeScene = ExtResource("4_jch1c")
 _pipesHolder = NodePath("PipesHolder")
+_plane = NodePath("Plane")
 
 [node name="sprite2d" type="Sprite2D" parent="."]
 position = Vector2(239, 326)

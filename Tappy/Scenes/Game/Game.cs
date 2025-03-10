@@ -8,6 +8,7 @@ public partial class Game : Node2D
     [Export] private Timer _spawnTimer;
     [Export] private PackedScene _pipeScene;
     [Export] private Node2D _pipesHolder;
+    [Export] private Plane _plane;
 
 
 	// Called when the node enters the scene tree for the first time.
@@ -18,6 +19,7 @@ public partial class Game : Node2D
 
         // spawn pipes on timer
         _spawnTimer.Timeout += OnSpawnTimer;
+        _plane.OnPlaneCrash += GameOver; // custom signal handling
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -38,7 +40,19 @@ public partial class Game : Node2D
         pipe.Position = new Vector2(_spawnLower.Position.X, YCoord);
     }
 
+    private void StopPipes() {
+        _spawnTimer.Stop();
+        foreach (Node node in _pipesHolder.GetChildren()) {
+            node.SetProcess(false);  // stop all movement, user input, etc.
+        }
+    }
+
     private void OnSpawnTimer() {
         SpawnPipe();
+    }
+
+    private void GameOver() {
+        GD.Print("Plane crashed!");
+        StopPipes();
     }
 }

@@ -3,12 +3,20 @@ using System;
 
 public partial class Plane : CharacterBody2D
 {
+    // consts
     const float GRAVITY = 800.0f;
     const float POWER = -450.0f;
     
+    // exports
     [Export] private NodePath _animplayPath;
     private AnimationPlayer _animplay;
+    [Export] private AnimatedSprite2D _planeSprite;
 
+    // signals
+    [Signal] public delegate void OnPlaneCrashEventHandler();
+
+
+    // functions ********************************************************************************
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -28,8 +36,17 @@ public partial class Plane : CharacterBody2D
             _animplay.Play("power");
         } 
 
-
         Velocity = velocityLocal;
         MoveAndSlide();
+
+        if (IsOnFloor()) {
+            Die();  // only called once since setphysicsprocess(false)
+        }
 	}
+
+    private void Die() {
+        SetPhysicsProcess(false);  //no longer have physics process, no flying
+        _planeSprite.Stop();  // halt animations
+        EmitSignal(SignalName.OnPlaneCrash);
+    }
 }

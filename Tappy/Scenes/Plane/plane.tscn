@@ -73,9 +73,10 @@ _data = {
 "power": SubResource("Animation_vedy8")
 }
 
-[node name="Plane" type="CharacterBody2D"]
+[node name="Plane" type="CharacterBody2D" node_paths=PackedStringArray("_planeSprite")]
 script = ExtResource("1_7qyio")
 _animplayPath = NodePath("animationPlayer")
+_planeSprite = NodePath("animatedSprite2d")
 
 [node name="animatedSprite2d" type="AnimatedSprite2D" parent="."]
 position = Vector2(-3, 0)
