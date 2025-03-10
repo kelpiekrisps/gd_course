@@ -14,6 +14,9 @@ public partial class Pipes : Node2D
 	{
         // when pipes leave screen call fn to delete
         _visibleOnScreenNotifier.ScreenExited += OnScreenExited;  // attach fn to signal emission
+        _lowerPipe.BodyEntered += OnPipeBodyEntered;
+        _upperPipe.BodyEntered += OnPipeBodyEntered;
+        _laser.BodyEntered += OnLaserEntered;
     }
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,5 +28,20 @@ public partial class Pipes : Node2D
     // once left screen, remove pipes from scene
     private void OnScreenExited() {
         QueueFree();
+    }
+
+    private void OnPipeBodyEntered(Node2D body) {
+        if (body is Plane) {
+            (body as Plane).Die();  // cast body as plane type to call Die
+        }
+        /* if (body.IsInGroup("plane")) {
+            (body as Plane).Die();
+        } */
+    }
+
+    private void OnLaserEntered(Node2D body) {
+        if (body is Plane) {
+            GD.Print("scored!");
+        }
     }
 }

@@ -44,7 +44,7 @@ public partial class Plane : CharacterBody2D
         }
 	}
 
-    private void Die() {
+    public void Die() {
         SetPhysicsProcess(false);  //no longer have physics process, no flying
         _planeSprite.Stop();  // halt animations
         EmitSignal(SignalName.OnPlaneCrash);

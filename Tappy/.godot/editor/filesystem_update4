@@ -7,3 +7,5 @@ res://Scenes/Barrier/barrier.tscn
 res://Scenes/Pipe/pipe.tscn
 res://Scenes/Pipe/laser.tscn
 res://Scenes/Game/Game.cs
+res://Scenes/Main/main.tscn
+res://Resources/lg_30_white.tres

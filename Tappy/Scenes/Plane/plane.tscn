@@ -73,7 +73,7 @@ _data = {
 "power": SubResource("Animation_vedy8")
 }
 
-[node name="Plane" type="CharacterBody2D" node_paths=PackedStringArray("_planeSprite")]
+[node name="Plane" type="CharacterBody2D" node_paths=PackedStringArray("_planeSprite") groups=["plane"]]
 script = ExtResource("1_7qyio")
 _animplayPath = NodePath("animationPlayer")
 _planeSprite = NodePath("animatedSprite2d")
