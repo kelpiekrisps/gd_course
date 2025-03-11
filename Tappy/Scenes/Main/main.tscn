@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://duro1untumul6"]
+[gd_scene load_steps=11 format=3 uid="uid://duro1untumul6"]
 
 [ext_resource type="Texture2D" uid="uid://h63lamyeerey" path="res://assets/background/sky.png" id="1_evxli"]
+[ext_resource type="Script" path="res://Scenes/Main/Main.cs" id="1_mdq4j"]
 [ext_resource type="FontFile" uid="uid://dcwr65xpemjx" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="2_r1rud"]
 [ext_resource type="LabelSettings" uid="uid://dg2h7xh2hifkt" path="res://Resources/lg_72_red.tres" id="3_g64jk"]
 [ext_resource type="LabelSettings" uid="uid://c73msplivgp6m" path="res://Resources/lg_30_white.tres" id="4_78n4m"]
@@ -51,6 +52,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_mdq4j")
 
 [node name="textureRect" type="TextureRect" parent="."]
 layout_mode = 1

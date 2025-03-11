@@ -1,7 +1,7 @@
+Label
 AnimationPlayer
 AudioStreamPlayer
 MarginContainer
-Label
 TextureRect
 Timer
 Node2D

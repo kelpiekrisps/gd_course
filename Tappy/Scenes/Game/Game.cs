@@ -10,6 +10,11 @@ public partial class Game : Node2D
     [Export] private Node2D _pipesHolder;
     [Export] private Plane _plane;
 
+    private bool GAME_OVER = false;
+
+    private static readonly PackedScene MAIN_SCENE = 
+                GD.Load<PackedScene>("res://Scenes/Main/main.tscn");
+
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -25,6 +30,11 @@ public partial class Game : Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+        // check if user wants to end the game/return to main scene
+        bool quit_game = Input.IsActionJustPressed("quit") || (GAME_OVER && Input.IsActionJustPressed("fly"));
+        if (quit_game) {
+            GetTree().ChangeSceneToPacked(MAIN_SCENE);
+        }
 	}
 
     public float GetSpawnY() {
@@ -54,5 +64,6 @@ public partial class Game : Node2D
     private void GameOver() {
         GD.Print("Plane crashed!");
         StopPipes();
+        GAME_OVER = true;
     }
 }

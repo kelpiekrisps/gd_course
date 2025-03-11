@@ -9,3 +9,4 @@ res://Scenes/Pipe/laser.tscn
 res://Scenes/Game/Game.cs
 res://Scenes/Main/main.tscn
 res://Resources/lg_30_white.tres
+res://Scenes/Main/Main.cs
