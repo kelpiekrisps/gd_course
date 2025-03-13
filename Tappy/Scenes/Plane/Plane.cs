@@ -5,7 +5,7 @@ public partial class Plane : CharacterBody2D
 {
     // consts
     const float GRAVITY = 800.0f;
-    const float POWER = -450.0f;
+    [Export] float POWER = -400.0f;
     
     // exports
     [Export] private NodePath _animplayPath;

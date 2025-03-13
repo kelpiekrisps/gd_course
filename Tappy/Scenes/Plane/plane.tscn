@@ -75,6 +75,7 @@ _data = {
 
 [node name="Plane" type="CharacterBody2D" node_paths=PackedStringArray("_planeSprite") groups=["plane"]]
 script = ExtResource("1_7qyio")
+POWER = -350.0
 _animplayPath = NodePath("animationPlayer")
 _planeSprite = NodePath("animatedSprite2d")
 
