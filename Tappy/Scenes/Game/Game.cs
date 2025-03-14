@@ -12,10 +12,6 @@ public partial class Game : Node2D
 
     private bool GAME_OVER = false;
 
-    private static readonly PackedScene MAIN_SCENE = 
-                GD.Load<PackedScene>("res://Scenes/Main/main.tscn");
-
-
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{   
@@ -32,8 +28,9 @@ public partial class Game : Node2D
 	{
         // check if user wants to end the game/return to main scene
         bool quit_game = Input.IsActionJustPressed("quit") || (GAME_OVER && Input.IsActionJustPressed("fly"));
+        
         if (quit_game) {
-            GetTree().ChangeSceneToPacked(MAIN_SCENE);
+            GameManager.LoadMain();
         }
 	}
 

@@ -14,11 +14,14 @@ public partial class GameManager : Node
         Instance = this;  // singleton, one instance
 	}
 
-    public void LoadMain() {
-        GetTree().ChangeSceneToPacked(_mainScene);
+    public static  void LoadMain() {
+        // by making static (class level)
+        // need to have an instance to call GetTree,
+        // to which we use Instance
+        Instance.GetTree().ChangeSceneToPacked(Instance._mainScene);
     }
 
-    public void LoadGame() {
-        GetTree().ChangeSceneToPacked(_gameScene);
+    public static void LoadGame() {
+        Instance.GetTree().ChangeSceneToPacked(Instance._gameScene);
     }
 }
