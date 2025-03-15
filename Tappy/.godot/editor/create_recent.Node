@@ -1,8 +1,9 @@
-Node
+CanvasLayer
 Label
+MarginContainer
+Node
 AnimationPlayer
 AudioStreamPlayer
-MarginContainer
 TextureRect
 Timer
 Node2D
@@ -12,4 +13,3 @@ VisibleOnScreenNotifier2D
 AnimationTree
 CollisionShape2D
 Sprite2D
-Area2D

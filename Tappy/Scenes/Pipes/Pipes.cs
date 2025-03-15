@@ -17,10 +17,19 @@ public partial class Pipes : Node2D
         _lowerPipe.BodyEntered += OnPipeBodyEntered;
         _upperPipe.BodyEntered += OnPipeBodyEntered;
         _laser.BodyEntered += OnLaserEntered;
+
+        // when plane crashes, have the signal react here by stopping the instance of a pipe
+        SignalManager.Instance.OnPlaneCrash += OnPlaneCrash;
     }
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
+    // necessary as SignalManager invoked
+    public override void _ExitTree()
+    {
+        SignalManager.Instance.OnPlaneCrash -= OnPlaneCrash;
+    }
+
+    // Called every frame. 'delta' is the elapsed time since the previous frame.
+    public override void _Process(double delta)
 	{
         Position -= new Vector2(_speed * (float)delta, 0);
 	}
@@ -34,14 +43,16 @@ public partial class Pipes : Node2D
         if (body is Plane) {
             (body as Plane).Die();  // cast body as plane type to call Die
         }
-        /* if (body.IsInGroup("plane")) {
-            (body as Plane).Die();
-        } */
     }
 
     private void OnLaserEntered(Node2D body) {
         if (body is Plane) {
-            GD.Print("scored!");
+            GD.Print(ScoreManager.GetScore());
+            ScoreManager.IncrementScore();
         }
+    }
+
+    private void OnPlaneCrash() {
+        SetProcess(false);
     }
 }

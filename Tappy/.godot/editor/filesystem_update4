@@ -11,3 +11,6 @@ res://Scenes/Main/main.tscn
 res://Resources/lg_30_white.tres
 res://Scenes/Main/Main.cs
 res://Globals/GameManager.cs
+res://Globals/SignalManager.cs
+res://Globals/ScoreManager.cs
+res://Scenes/Hud/hud.tscn

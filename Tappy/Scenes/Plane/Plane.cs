@@ -12,9 +12,6 @@ public partial class Plane : CharacterBody2D
     private AnimationPlayer _animplay;
     [Export] private AnimatedSprite2D _planeSprite;
 
-    // signals
-    [Signal] public delegate void OnPlaneCrashEventHandler();
-
 
     // functions ********************************************************************************
 	// Called when the node enters the scene tree for the first time.
@@ -47,6 +44,7 @@ public partial class Plane : CharacterBody2D
     public void Die() {
         SetPhysicsProcess(false);  //no longer have physics process, no flying
         _planeSprite.Stop();  // halt animations
-        EmitSignal(SignalName.OnPlaneCrash);
+        //EmitSignal(SignalName.OnPlaneCrash);
+        SignalManager.EmitOnPlaneDied();
     }
 }

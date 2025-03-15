@@ -1,29 +1,18 @@
-[gd_scene load_steps=8 format=3 uid="uid://dp1genyd1nb2f"]
+[gd_scene load_steps=7 format=3 uid="uid://dp1genyd1nb2f"]
 
 [ext_resource type="Script" path="res://Scenes/Game/Game.cs" id="1_6d6nk"]
 [ext_resource type="Texture2D" uid="uid://3h6kt6j48mfp" path="res://assets/background/rocks_2.png" id="1_i5jou"]
 [ext_resource type="PackedScene" uid="uid://c41cokeqnvppu" path="res://Scenes/Plane/plane.tscn" id="2_unoey"]
 [ext_resource type="PackedScene" uid="uid://cra5g3mod6ts5" path="res://Scenes/Barrier/barrier.tscn" id="3_ykkwk"]
 [ext_resource type="PackedScene" uid="uid://cnjr8hx3v7ovp" path="res://Scenes/Pipes/pipes.tscn" id="4_jch1c"]
-[ext_resource type="FontFile" uid="uid://dcwr65xpemjx" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="6_hvifr"]
+[ext_resource type="PackedScene" uid="uid://bjq6vl1cxf03q" path="res://Scenes/Hud/hud.tscn" id="7_otb1n"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_vvk2t"]
-font = ExtResource("6_hvifr")
-font_size = 20
-font_color = Color(0.981739, 0.900307, 0.890202, 1)
-outline_size = 5
-outline_color = Color(0.921384, 0.603832, 0.570946, 1)
-shadow_size = 3
-shadow_color = Color(0.780912, 0.35456, 0.325146, 0.541176)
-
-[node name="Game" type="Node2D" node_paths=PackedStringArray("_spawnUpper", "_spawnLower", "_spawnTimer", "_pipesHolder", "_plane")]
+[node name="Game" type="Node2D" node_paths=PackedStringArray("_spawnUpper", "_spawnLower", "_spawnTimer")]
 script = ExtResource("1_6d6nk")
 _spawnUpper = NodePath("SpawnUpper")
 _spawnLower = NodePath("SpawnLower")
 _spawnTimer = NodePath("timer")
 _pipeScene = ExtResource("4_jch1c")
-_pipesHolder = NodePath("PipesHolder")
-_plane = NodePath("Plane")
 
 [node name="sprite2d" type="Sprite2D" parent="."]
 position = Vector2(239, 326)
@@ -50,10 +39,6 @@ position = Vector2(550, 540)
 wait_time = 1.8
 autostart = true
 
-[node name="label" type="Label" parent="."]
-offset_left = 15.0
-offset_top = 15.0
-offset_right = 183.0
-offset_bottom = 38.0
-text = "Press \"q\" to quit"
-label_settings = SubResource("LabelSettings_vvk2t")
+[node name="canvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Hud" parent="canvasLayer" instance=ExtResource("7_otb1n")]
