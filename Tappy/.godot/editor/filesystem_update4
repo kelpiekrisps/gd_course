@@ -14,3 +14,4 @@ res://Globals/GameManager.cs
 res://Globals/SignalManager.cs
 res://Globals/ScoreManager.cs
 res://Scenes/Hud/hud.tscn
+res://Scenes/Hud/Hud.cs

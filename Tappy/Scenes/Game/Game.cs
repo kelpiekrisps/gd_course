@@ -16,15 +16,15 @@ public partial class Game : Node2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{   
-        ScoreManager.ResetScore();
-
         // spawn initial pipe
         SpawnPipe();
 
         // custom signal handling
         _spawnTimer.Timeout += OnSpawnTimer;  // does not need to be removed as life span is same as scene
         SignalManager.Instance.OnPlaneCrash += GameOver; // life span can outlive scene so need to handle (eg when leaving remove connection)
-	}
+	
+        CallDeferred("LateStuff");
+    }
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
@@ -40,6 +40,11 @@ public partial class Game : Node2D
     public override void _ExitTree()
     {
         SignalManager.Instance.OnPlaneCrash -= GameOver;  // remove reference for this node so when scene reloaded no signal issues
+    }
+
+    // want to ensure other class' ready invoked first
+    private void LateStuff() {
+        ScoreManager.ResetScore();
     }
 
     public float GetSpawnY() {

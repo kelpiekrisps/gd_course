@@ -24,6 +24,8 @@ public partial class ScoreManager : Node
         if (Instance._score > Instance._highScore) {
             Instance.newHighScore(Instance._score);
         }
+        
+        SignalManager.EmitOnScored();  // envoked whenever score changed
     }
 
     public static void IncrementScore() {

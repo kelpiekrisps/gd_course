@@ -1,14 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://bjq6vl1cxf03q"]
+[gd_scene load_steps=3 format=3 uid="uid://bjq6vl1cxf03q"]
 
 [ext_resource type="LabelSettings" uid="uid://dyv1m1vqn5tn2" path="res://Resources/lg_30_red.tres" id="1_1vbux"]
+[ext_resource type="Script" path="res://Scenes/Hud/Hud.cs" id="1_6r0v1"]
 
-[node name="Hud" type="Control"]
+[node name="Hud" type="Control" node_paths=PackedStringArray("_scoreLabel")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_6r0v1")
+_scoreLabel = NodePath("marginContainer/label")
 
 [node name="marginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
