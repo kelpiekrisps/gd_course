@@ -15,3 +15,5 @@ res://Globals/SignalManager.cs
 res://Globals/ScoreManager.cs
 res://Scenes/Hud/hud.tscn
 res://Scenes/Hud/Hud.cs
+res://Scenes/Hud/gameOver.tscn
+res://Scenes/Hud/GameOver.cs

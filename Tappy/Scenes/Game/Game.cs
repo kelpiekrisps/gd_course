@@ -11,7 +11,7 @@ public partial class Game : Node2D
     //[Export] private Node2D _pipesHolder;
     //[Export] private Plane _plane;
 
-    private bool GAME_OVER = false;
+    //private bool GAME_OVER = false;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -30,7 +30,7 @@ public partial class Game : Node2D
 	public override void _Process(double delta)
 	{
         // check if user wants to end the game/return to main scene
-        bool quit_game = Input.IsActionJustPressed("quit") || (GAME_OVER && Input.IsActionJustPressed("fly"));
+        bool quit_game = Input.IsActionJustPressed("quit");
         
         if (quit_game) {
             GameManager.LoadMain();
@@ -76,6 +76,6 @@ public partial class Game : Node2D
         GD.Print("Plane crashed!");
         _spawnTimer.Stop();
         //StopPipes();
-        GAME_OVER = true;
+        //GAME_OVER = true;
     }
 }
