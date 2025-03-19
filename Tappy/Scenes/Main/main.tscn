@@ -45,7 +45,7 @@ _data = {
 "blink_instructions": SubResource("Animation_twoga")
 }
 
-[node name="Main" type="Control"]
+[node name="Main" type="Control" node_paths=PackedStringArray("_highScoreValue")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -53,6 +53,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_mdq4j")
+_highScoreValue = NodePath("marginContainer/highscoreVal")
 
 [node name="textureRect" type="TextureRect" parent="."]
 layout_mode = 1
